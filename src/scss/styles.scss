@@ -1,9 +1,21 @@
+// bootstrab
+@import "../bootstrap/functions";
+@import "../bootstrap/variables";
 
-.box{
-    width: 50px;
-    height: 50px;
-    margin: 20px auto;
-    border-radius: 50%;
-    background-color: red;
-    transition: all 2s;
+// pages
+@import "pages/login";
+
+// body{
+//     font-family: 'Roboto', sans-serif;
+// }
+ 
+// utility classes
+.fw-300{
+    font-weight: 300;
+}
+.fw-500{
+    font-weight: 500;
+}
+.fw-700{
+    font-weight: 700;
 }
