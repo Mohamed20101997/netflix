@@ -4,12 +4,30 @@
 
 // pages
 @import "pages/index";
+@import "pages/show";
 @import "pages/login";
 
 body{
 
     background: $black;
 //     font-family: 'Roboto', sans-serif;
+}
+
+
+.navbar{
+    transition: all .5s ease-in;
+}
+
+.bg-black-transparent{
+    background: rgba($black, 0.8);
+}
+
+.owl-nav{
+    position: absolute;
+    bottom: 0;
+    color: #a09696;
+    font-size: 2.5rem;
+    right: 50%;
 }
  
 // utility classes

@@ -54,8 +54,8 @@
     }
     &:hover img{
         opacity: .6;
+        filter: blur(2px)
     }
-    
     
     &:hover .movie__details{
         opacity: 1;
@@ -91,4 +91,12 @@
     }
    }
 
+}
+
+#footer{
+    .footer__social-icons{
+        .fab{
+            font-size: 1.2rem;
+        }
+    }
 }

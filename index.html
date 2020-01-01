@@ -22,7 +22,7 @@
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
             <div class="container">
 
-                <a href="#" class="navbar-brand">Netflix<span class="text-primary font-weight-bold">ify</span class="text-primary"></a>
+                <a href="index.html" class="navbar-brand">Netflix<span class="text-primary font-weight-bold">ify</span class="text-primary"></a>
                 <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -83,7 +83,7 @@
                             <p class="movie__description my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia error minima? Laboriosam quos fugiat ipsam porro distinctio, doloremque nisi esse in temporibus reiciendis facere sint dolorum tempore ex consequatur.</p>
 
                             <div class="movie_cta my-4 my-md-5">
-                                <a href="#" class="btn btn-primary text-capitalize mr-0 mr-md-2"><i class="fas fa-play"></i> watch now</a>
+                                <a href="show.html" class="btn btn-primary text-capitalize mr-0 mr-md-2"><i class="fas fa-play"></i> watch now</a>
                                 <a href="#" class="btn btn-outline-light text-capitalize"><i class="fas fa-heart"></i> add to favorite</a>
                             </div>
 
@@ -131,7 +131,7 @@
                             <p class="movie__description my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia error minima? Laboriosam quos fugiat ipsam porro distinctio, doloremque nisi esse in temporibus reiciendis facere sint dolorum tempore ex consequatur.</p>
 
                             <div class="movie_cta my-4 my-md-5">
-                                <a href="#" class="btn btn-primary text-capitalize mr-0 mr-md-2"><i class="fas fa-play"></i> watch now</a>
+                                <a href="show.html" class="btn btn-primary text-capitalize mr-0 mr-md-2"><i class="fas fa-play"></i> watch now</a>
                                 <a href="#" class="btn btn-outline-light text-capitalize"><i class="fas fa-heart"></i> add to favorite</a>
                             </div>
 
@@ -155,14 +155,17 @@
 
         <div class="container">
 
-            <div class="row justify-content-between my-4">
+            <div class="row my-4">
+                <div class="col-12 d-flex justify-content-between">
 
-                <h3 class="listing__title fw-300 text-white">Drama</h3>
-                <a href="#" class="align-self-center text-primary text-capitalize">see all</a>
+                    <h3 class="listing__title fw-300 text-white">Drama</h3>
+                    <a href="#" class="align-self-center text-capitalize btn btn-outline-primary">see all</a>
+                    
+                </div> 
 
             </div><!-- end of row -->
 
-            <div class="row movies owl-carousel owl-theme">
+            <div class="movies owl-carousel owl-theme">
 
                 <div class="movie p-0">
                     <img src="dist/images/Togo-poster.jpg" class="img-fluid" alt="togo">
@@ -192,7 +195,7 @@
                         </div>
 
                         <div class=" d-flex movie__cta">
-                            <a href="#" class="btn btn-primary text-capitalize flex-fill mr-2"><i class="fas fa-play"></i> watch now</a>
+                            <a href="show.html" class="btn btn-primary text-capitalize flex-fill mr-2"><i class="fas fa-play"></i> watch now</a>
                             <i class="far fa-heart align-self-center movie__fav-btn"></i>
                         </div>
 
@@ -364,14 +367,18 @@
 
         <div class="container">
 
-            <div class="row justify-content-between my-4">
+            <div class="row my-4">
 
-                <h3 class="listing__title fw-300 text-white">Action</h3>
-                <a href="#" class="align-self-center text-primary text-capitalize">see all</a>
+                <div class="col-12 d-flex justify-content-between">
+
+                    <h3 class="listing__title fw-300 text-white">Action</h3>
+                    <a href="#" class="align-self-center text-primary text-capitalize">see all</a>
+
+                </div> 
 
             </div><!-- end of row -->
 
-            <div class="row movies owl-carousel owl-theme">
+            <div class="movies owl-carousel owl-theme">
 
                 <div class="movie p-0">
                     <img src="dist/images/Togo-poster.jpg" class="img-fluid" alt="togo">
@@ -563,12 +570,23 @@
 
                 </div> <!-- end of col -->
 
-            </div> <!-- end of row -->
+            </div>
 
         </div> <!-- end of container -->
 
     </section> <!--end of listing section-->
 
+    <section id="footer" class="bg-primary text-center text-white py-3 mt-3">
+        <p class="mb-0 text-capitalize">&copy; all copy right reserved for mohamed adel</p>
+
+        <div class="footer__social-icons mb-0">
+            <a href="#" class="text-white mr-1"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="text-white mr-1"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="text-white mr-1"><i class="fab fa-google"></i></a>
+            <a href="#" class="text-white mr-1"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white mr-1"><i class="fab fa-youtube"></i></a>
+        </div>
+    </section>
     
 
 
@@ -584,33 +602,34 @@
 <script>
     $(document).ready(function(){
         $("#banner .movies").owlCarousel({
-    loop:true,
-    nav:false,
-    items:1,
-    dots:false
+            loop:true,
+            nav:true,
+            items:1,
+            dots:false,
+        });
 
-});
         $("#listing .movies").owlCarousel({
-    loop:true,
-    nav:false,
-    responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:3
-        },
-        900:{
-            items:3
-        },
-        1000:{
-            items:5
-        },
-    },
-    dots:false,
-    margin:15,
+            loop:true,
+            nav:false,
+            stagePadding: 50,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:3
+                },
+                900:{
+                    items:3
+                },
+                1000:{
+                    items:5
+                },
+            },
+            dots:false,
+            margin:15,
 
-});
+        });
     });
 </script>
 
