@@ -5,37 +5,176 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title> Netflixify </title>
-
     <!-- main bootstrap -->
     <link rel="stylesheet" href="dist/css/bootstrap.min.css">
-
     <!-- fontawesome -->
     <link rel="stylesheet" href="dist/css/all.min.css">
-
     <!-- vendor css -->
     <link rel="stylesheet" href="dist/css/vendor.min.css">
-    
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,700&display=swap" rel="stylesheet">
-
     <!-- main css -->
     <link rel="stylesheet" href="dist/css/main.min.css">
 </head>
 <body>
 
+    <section id="banner">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+
+                <a href="#" class="navbar-brand">Netflix<span class="text-primary font-weight-bold">ify</span class="text-primary"></a>
+                <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div id="my-nav" class="collapse navbar-collapse">
+
+                    <form action="" class="col-12 col-md-6 p-0 mt-1">
+                        <div class="input-group">
+                            <input type="search" class="form-control bg-transparent border-0" name="search" placeholder="Search for your favorite movies" aria-label="Search for your favorite movies">
+                            <div class="input-group-append">
+                                <span class="input-group-text bg-transparent border-0 text-white"><i class="fas fa-search"></i></span>
+                            </div>
+                        </div>
+                    </form>
+                   
+
+                    <ul class="navbar-nav ml-auto">
+                      <a href="login.html" class="btn btn-primary mb-2 mb-md-0 mr-0 mr-md-2">Login</a>
+                      <a href="register.html" class="btn btn-outline-light">Register</a>
+                    </ul>
+
+                </div>  <!-- end of collapse-->
+
+            </div> <!-- end of container-->
+
+        </nav> <!-- end of nav-->
+
+        <div class="movies owl-carousel owl-theme">
+
+            <div class="movie text-white d-flex justify-content-center align-items-center">
+
+                <div class="movie__bg" style="background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('dist/images/badBoys.jpg') center/cover no-repeat;"></div>
+                
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            
+                            <div class="d-flex justify-content-between">
+                                <h1 class="movie__name fw-300">Bad Boys fOR lIFE</h1>
+                                <span class="movie__year align-self-center">2013</span>
+                            </div>
+
+                            <div class="movie__rating d-flex my-1">
+
+                                <div class="d-flex">
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                </div>
+
+                                <span class="align-self-center">4.7</span>
+
+                            </div>
+
+
+                            <p class="movie__description my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia error minima? Laboriosam quos fugiat ipsam porro distinctio, doloremque nisi esse in temporibus reiciendis facere sint dolorum tempore ex consequatur.</p>
+
+                            <div class="movie_cta my-4 my-md-5">
+                                <a href="#" class="btn btn-primary text-capitalize mr-0 mr-md-2"><i class="fas fa-play"></i> watch now</a>
+                                <a href="#" class="btn btn-outline-light text-capitalize"><i class="fas fa-heart"></i> add to favorite</a>
+                            </div>
+
+                        </div><!-- end of col-->
+
+                        <div class="col-6 mt-2 mx-auto col-md-4 col-lg-3 ml-md-auto mr-md-0">
+                            <img src="dist/images/badBoysPoster.jpg" class="img-fluid">
+                        </div>
+
+                    </div> <!-- end of row-->
+
+                </div> <!-- end of container-->
+
+            </div><!-- end of movie-->
+
+            <div class="movie text-white d-flex justify-content-center align-items-center">
+
+                <div class="movie__bg" style="background: linear-gradient(rgba(0,0,0, 0.7), rgba(0,0,0, 0.7)), url('dist/images/Joker.jpg') center/cover no-repeat;"></div>
+                
+                <div class="container">
+
+                    <div class="row">
+
+                        <div class="col-md-6">
+                            
+                            <div class="d-flex justify-content-between">
+                                <h1 class="movie__name fw-300">Joker</h1>
+                                <span class="movie__year align-self-center">2019</span>
+                            </div>
+
+                            <div class="movie__rating d-flex my-1">
+
+                                <div class="d-flex">
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                    <span class="fas fa-star text-primary mr-1"></span>
+                                </div>
+
+                                <span class="align-self-center">4.9</span>
+
+                            </div>
+
+
+                            <p class="movie__description my-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto officia error minima? Laboriosam quos fugiat ipsam porro distinctio, doloremque nisi esse in temporibus reiciendis facere sint dolorum tempore ex consequatur.</p>
+
+                            <div class="movie_cta my-4 my-md-5">
+                                <a href="#" class="btn btn-primary text-capitalize mr-0 mr-md-2"><i class="fas fa-play"></i> watch now</a>
+                                <a href="#" class="btn btn-outline-light text-capitalize"><i class="fas fa-heart"></i> add to favorite</a>
+                            </div>
+
+                        </div><!-- end of col-->
+
+                        <div class="col-6 mt-2 mx-auto col-md-4 col-lg-3 ml-md-auto mr-md-0">
+                            <img src="dist/images/joker-Poster.jpg" class="img-fluid">
+                        </div>
+
+                    </div> <!-- end of row-->
+
+                </div> <!-- end of container-->
+
+            </div><!-- end of movie-->
+
+        </div> <!-- end of movies-->
+        
+    </section> <!-- end of banner section-->
  
 
 
     
 
 
-    <!-- jquery  -->
-    <script src="dist/js/jquery-3.4.1.min.js"></script>
-    <!-- bootstrap  -->
-    <script src="dist/js/bootstrap.min.js"></script>
-    <!-- vendor js  -->
-    <script src="dist/js/vendor.min.js"></script>
-    <!-- main  -->
-    <script src="dist/js/main.min.js"></script>
+<!-- jquery  -->
+<script src="dist/js/jquery-3.4.1.min.js"></script>
+<!-- bootstrap  -->
+<script src="dist/js/bootstrap.min.js"></script>
+<!-- vendor js  -->
+<script src="dist/js/vendor.min.js"></script>
+<!-- main  -->
+<script src="dist/js/main.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $("#banner .movies").owlCarousel({
+    loop:true,
+    nav:false,
+    items:1
+
+});
+    });
+</script>
+
 </body>
 </html>

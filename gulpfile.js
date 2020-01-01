@@ -52,7 +52,7 @@ async function  scripts () {
 }
 
 async function vendor_scripts(){
-    gulp.src('src/js/**/*.js')
+    gulp.src('src/plugins/**/*.js')
     .pipe(uglify())
     .pipe(concat('vendor.min.js'))
     .pipe(gulp.dest('dist/js'))
