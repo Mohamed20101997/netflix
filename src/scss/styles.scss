@@ -6,9 +6,11 @@
 @import "pages/index";
 @import "pages/login";
 
-// body{
+body{
+
+    background: $black;
 //     font-family: 'Roboto', sans-serif;
-// }
+}
  
 // utility classes
 .fw-300{

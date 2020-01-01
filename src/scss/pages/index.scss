@@ -41,3 +41,54 @@
         }
     }
 }
+
+#listing{
+
+   .movie{
+
+    background: $black;
+    position: relative;
+
+    img{
+        transition: all .2s ease-in;
+    }
+    &:hover img{
+        opacity: .6;
+    }
+    
+    
+    &:hover .movie__details{
+        opacity: 1;
+    }
+
+    .movie__details{
+        position: absolute;
+        bottom: 1rem;
+        left: 10px;
+        right: 10px;
+        opacity: 0;
+        transition: all .2s ease-in;
+
+    }
+
+    .movie__name{
+        font-size: 1.5rem;
+    }
+
+    .movie__rating{
+
+        .fas{
+            font-size: 0.9rem;
+        }
+    }
+
+    .movie__fav-btn{
+        font-size: 1.5rem;
+
+        &:hover{
+            font-weight:900;
+        }
+    }
+   }
+
+}
